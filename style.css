@@ -65,6 +65,40 @@ nav a:hover {
     margin: 20px auto;
 }
 
+.hero-tagline {
+    max-width: 600px;
+    margin: 10px auto 40px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* HOME FEATURES */
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.feature-box {
+    background: #111;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0,255,255,0.15);
+}
+
+.feature-box i {
+    font-size: 28px;
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
 /* GALLERY GRID */
 .gallery {
     display: grid;
