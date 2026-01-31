@@ -8,40 +8,39 @@
 /* BODY */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #111, #222);
+    background: radial-gradient(circle at top, #1a0033, #000);
     color: #eee;
 }
 
 /* HEADER */
 header {
-    background-color: black;
+    background: black;
     text-align: center;
 }
 
 .logo {
     width: 100%;
-    border-bottom: 3px solid crimson;
+    border-bottom: 4px solid #ff0055;
 }
 
 /* NAV */
 nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     padding: 15px;
 }
 
 nav a {
-    color: white;
+    color: #00ffff;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: crimson;
-    text-decoration: underline;
+    color: #ff0055;
+    text-shadow: 0 0 10px #ff0055;
 }
 
 /* SECTIONS */
@@ -52,10 +51,15 @@ nav a:hover {
 
 .light {
     background-color: #f2f2f2;
-    color: #222;
+    color: #111;
 }
 
 /* HERO */
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 15px #00ffff;
+}
+
 .hero img {
     width: 100px;
     margin: 20px auto;
@@ -65,18 +69,16 @@ nav a:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-/* GALLERY CARD */
+/* CARD */
 .gallery-item {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
+    background: #111;
+    border-radius: 12px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -92,10 +94,30 @@ nav a:hover {
     font-size: 16px;
 }
 
-/* HOVER EFFECT */
+/* HOVER BASE */
 .gallery-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+}
+
+/* NEON GLOWS */
+.glow-red:hover {
+    box-shadow: 0 0 15px #ff0033, 0 0 30px #ff0033;
+}
+
+.glow-blue:hover {
+    box-shadow: 0 0 15px #00ccff, 0 0 30px #00ccff;
+}
+
+.glow-green:hover {
+    box-shadow: 0 0 15px #00ff66, 0 0 30px #00ff66;
+}
+
+.glow-purple:hover {
+    box-shadow: 0 0 15px #cc00ff, 0 0 30px #cc00ff;
+}
+
+.glow-orange:hover {
+    box-shadow: 0 0 15px #ff8800, 0 0 30px #ff8800;
 }
 
 /* FORMS */
@@ -113,7 +135,7 @@ input, textarea {
 }
 
 button {
-    background-color: crimson;
+    background: #ff0055;
     color: white;
     border: none;
     padding: 10px;
@@ -121,12 +143,13 @@ button {
 }
 
 button:hover {
-    background-color: darkred;
+    background: #cc003f;
+    box-shadow: 0 0 10px #ff0055;
 }
 
 /* FOOTER */
 footer {
-    background-color: black;
+    background: black;
     padding: 20px;
     text-align: center;
     font-size: 14px;
